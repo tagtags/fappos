@@ -1,5 +1,10 @@
 *.gem
 *.rbc
+*.pub
+*.pem
+*_rsa
+*.json
+
 /.config
 /coverage/
 /InstalledFiles
