@@ -209,6 +209,12 @@ class DriveInfo
 						end
 					end
 
+					if parms[:args].include?('-ws')
+						require './lib/web_server.rb'
+						WebServer.run!
+					end
+
+
 				end
 			end
 		end

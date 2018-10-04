@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function() {
+    	$('.nav-expand').click(function(){
+    		alert('clicked');
+    	});
+    	$('.nav-expand').hover(function() {
+        $(this).css('cursor','pointer');
+    	});
+		});
+	</script>
+</head>
+
+<body>
+
+<table>
+<% @scans.each_scan do |scan| %>
+	<tr>
+		<td><h3><div class="nav-expand">&#x25BC;</div></h3></td>
+		<td><h3><%= scan['drive'] %></h3></td>
+		<td><h3>&nbsp;&nbsp;&nbsp;</h3></td>
+		<td><h5><%= scan['scan_end'] %></h5></td>
+	</tr>
+<% end %>
+</table>
+
+</body>
