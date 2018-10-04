@@ -5,6 +5,8 @@
 *_rsa
 *.json
 
+add_github_key
+
 /.config
 /coverage/
 /InstalledFiles
